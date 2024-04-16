@@ -16,7 +16,7 @@ def translate_code(function_print, message):
 def translate_print_to_c(function_print):
     new_code = ""
     message = ""
-    pattern = r"'([^']*)'" # Expresión regular encargada se extraer la palabra que se encutra entre ' '
+    pattern = r"'([^']*)'" # Expresión regular encargada se extraer la palabra que se encuentra entre ' '
     if "print" in function_print:
         match = re.findall(pattern, function_print)
         message = match[0]
